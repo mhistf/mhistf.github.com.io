@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu').click(function(){
+				$('.submenu').show(slow,100)
+			});
+		});
+	</script>
+	<style type="text/css">
+		li{
+			list-styl-type:none;
+		}
+		.submenu{
+			overflow:hidden;
+			height:0;
+			transition:height 1s;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h4 class="menu">我爱</h4>
+	<ul class="submenu">
+		<li>哈士奇</li>
+		<li>猫</li>	
+		<li>土狗</li>			
+	</ul>
+</div>
+</body>
+</html>
